@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/badge/license-GPLv3-green.svg?style=flat)
 
 # Description
-This project is designed to precisely remove watermarks from Sora 2 generated videos using AI.
+This project is designed to precisely remove watermarks from Sora 2 generated videos using AI. 
 
 # How it works?
 This project uses AI to remove watermarks from Sora 2 generated videos. When a user uploads a video, the system analyzes each frame to detect the watermark and removes it using inpainting. The processed video is then rendered and returned to the user.
