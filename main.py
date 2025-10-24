@@ -32,11 +32,12 @@ if uploaded_file:
     st.video(str(input_path))
     st.write("🔧 Processing video...")
 
-    remove_watermark(input_path, output_path)
+    remove_watermark(input_path, output_path) 
 
     st.success("Done!")
     st.video(str(output_path))
     st.download_button("📥 Download cleaned video", data=open(output_path, "rb"), file_name=output_path.name)
+
 
 
 
