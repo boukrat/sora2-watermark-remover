@@ -31,7 +31,7 @@ async def upload_video(file: UploadFile = File(...)):
     return {"message": "Video processed", "download_url": f"/download/{output_path.name}"}
  
 @app.get("/download/{filename}")
-def download_video(filename: str 
+def download_video(filename: str  
     file_path = Path("output") / filename
     if file_path.exists():
         return FileResponse(file_path, media_type="video/mp4", filename=filename)
@@ -39,6 +39,7 @@ def download_video(filename: str
 
 if __name__ == "__main__":
     uvicorn.run("server:app", host="127.0.0.1", port=8000)
+
 
 
 
